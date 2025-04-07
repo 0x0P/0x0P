@@ -1,0 +1,172 @@
+.container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100dvh;
+}
+
+.back {
+  position: absolute;
+  z-index: -5;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  color: #1c1c1c;
+  font-size: 10rem;
+  filter: blur(5px);
+  user-select: none;
+  overflow: hidden;
+}
+
+.back span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(10deg);
+  animation: fontWeight 7s ease infinite;
+}
+
+@keyframes fontWeight {
+  0% {
+    font-weight: 500;
+    letter-spacing: 0.5rem;
+  }
+  50% {
+    font-weight: 900;
+    letter-spacing: 0;
+  }
+  100% {
+    font-weight: 500;
+    letter-spacing: 0.5rem;
+  }
+}
+
+@keyframes fontWeight {
+  0% {
+    font-weight: 500;
+    letter-spacing: 0;
+  }
+  50% {
+    font-weight: 900;
+    letter-spacing: 1rem;
+  }
+  100% {
+    font-weight: 500;
+    letter-spacing: 0;
+  }
+}
+.page {
+  scroll-snap-align: start;
+  width: 100dvw;
+  height: 100dvh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.page:nth-child(1) {
+  background-image: linear-gradient(
+    rgb(0 0 0),
+    rgba(0, 0, 0, 0) 20%,
+    rgba(0, 0, 0, 0) 80%,
+
+    rgb(0 0 0)
+  );
+  background-size: cover;
+  background-position: center;
+}
+
+.page:nth-child(2) {
+  background-image: linear-gradient(
+      rgb(0 0 0),
+      rgba(0, 0, 0, 0.5) 50%,
+      rgb(0 0 0)
+    ),
+    url("/sunrinback.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.page:nth-child(3) {
+  background-image: linear-gradient(
+    rgb(0 0 0),
+    rgba(64, 0, 255, 0.2) 30%,
+    rgba(0, 89, 255, 0.088) 80%,
+    rgb(0 0 0)
+  );
+  background-size: cover;
+  background-position: center;
+}
+
+.page h1 {
+  font-size: 3rem;
+  color: #fff;
+  font-weight: 900;
+}
+
+.half {
+  display: flex;
+  flex-direction: column;
+  width: 50dvw;
+  align-items: center;
+}
+
+.texts h1:first-child {
+  text-align: left;
+}
+.texts h1:nth-child(2) {
+  background: #fff;
+  color: #000;
+  padding: 0 2rem;
+  width: fit-content;
+}
+.texts h1:nth-child(3) {
+  text-align: right;
+}
+
+.half h2 {
+  font-weight: 100;
+  text-align: left;
+  font-size: 1.25rem;
+}
+
+.content {
+  padding: 2rem;
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 1rem;
+}
+
+.linkText {
+  color: #fff;
+  text-decoration: none;
+  width: fit-content;
+}
+
+.linkText h2 {
+  transition: all 0.3s ease-in-out;
+}
+
+.linkText h2:hover {
+  background: #fff;
+  color: #000;
+}
+
+@media screen and (max-width: 1200px) {
+  .back {
+    font-size: 5rem;
+  }
+  .page h1 {
+    font-size: 2rem;
+  }
+  .half {
+    width: 100dvw;
+    align-items: center;
+    justify-content: center;
+  }
+  .half h2 {
+    text-align: left;
+  }
+}
