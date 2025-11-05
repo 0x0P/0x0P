@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  width: 100dvw;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: fixed;
+  z-index: 100;
+}
+
+.container a {
+  text-decoration: none;
+}
+
+.container h1 {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.05em;
+  font-style: italic;
+}
