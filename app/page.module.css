@@ -1,0 +1,81 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  height: 100dvh;
+  padding: 0 5rem;
+  position: relative;
+}
+
+.title {
+  font-size: 3rem;
+  line-height: 1;
+  letter-spacing: -0.05em;
+  font-weight: 400;
+  z-index: 1;
+}
+
+.backgroundLayers {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100dvw;
+  height: 100dvh;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.backLayer,
+.cloudLayer,
+.moonLayer {
+  position: absolute;
+  top: -5%;
+  width: 110%;
+  height: 110%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: transform 0.1s ease-out;
+  will-change: transform;
+}
+
+.backLayer {
+  left: -5%;
+  background-image: url("/back.png");
+  background-position: center;
+}
+
+.cloudLayer {
+  left: -5%;
+  background-image: url("/cloud.png");
+  background-position: center;
+  pointer-events: none;
+}
+
+.moonLayer {
+  right: -5%;
+  background-image: url("/moon.png");
+  background-position: top right;
+  pointer-events: none;
+}
+
+/* 반응형 레이아웃 */
+@media (max-width: 768px) {
+  .main {
+    padding: 0 2rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .main {
+    padding: 0 1.5rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+}
