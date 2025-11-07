@@ -9,7 +9,7 @@ const bodoniModa = Bodoni_Moda({
 });
 
 export const metadata: Metadata = {
-  title: "0x0p",
+  title: "PERCENTZERO",
   description: "Striving for the ideal through refined sensibility.",
 };
 
