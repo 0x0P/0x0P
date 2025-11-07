@@ -1,0 +1,26 @@
+@import "../../app/about/about.module.css";
+
+.section {
+  composes: section from "../../app/about/about.module.css";
+}
+
+.sectionContent {
+  composes: sectionContent from "../../app/about/about.module.css";
+}
+
+.visionContent {
+  composes: visionContent from "../../app/about/about.module.css";
+}
+
+.visionTitle {
+  composes: visionTitle from "../../app/about/about.module.css";
+}
+
+.textGradient {
+  composes: textGradient from "../../app/about/about.module.css";
+}
+
+.visionText {
+  composes: visionText from "../../app/about/about.module.css";
+}
+

@@ -1,0 +1,26 @@
+@import "../../app/about/about.module.css";
+
+.section {
+  composes: section from "../../app/about/about.module.css";
+}
+
+.sectionContent {
+  composes: sectionContent from "../../app/about/about.module.css";
+}
+
+.textBlock {
+  composes: textBlock from "../../app/about/about.module.css";
+}
+
+.largeText {
+  composes: largeText from "../../app/about/about.module.css";
+}
+
+.textGradient {
+  composes: textGradient from "../../app/about/about.module.css";
+}
+
+.bodyText {
+  composes: bodyText from "../../app/about/about.module.css";
+}
+

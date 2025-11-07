@@ -26,8 +26,8 @@ export default function Footer() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/portfolio" className={styles.link}>
-                    Portfolio
+                  <Link href="/projects" className={styles.link}>
+                    Projects
                   </Link>
                 </li>
                 <li>

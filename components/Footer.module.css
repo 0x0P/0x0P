@@ -5,6 +5,7 @@
   border-image: linear-gradient(to right, transparent, #222, transparent) 1;
   position: relative;
   padding: 4rem 0;
+  z-index: 5;
 }
 
 .container {

@@ -1,0 +1,29 @@
+@import "../../app/about/about.module.css";
+
+.heroSection {
+  composes: heroSection from "../../app/about/about.module.css";
+}
+
+.heroContent {
+  composes: heroContent from "../../app/about/about.module.css";
+}
+
+.heroLabel {
+  composes: heroLabel from "../../app/about/about.module.css";
+}
+
+.heroTitle {
+  composes: heroTitle from "../../app/about/about.module.css";
+}
+
+.heroSubtitle {
+  composes: heroSubtitle from "../../app/about/about.module.css";
+}
+
+.scrollIndicator {
+  composes: scrollIndicator from "../../app/about/about.module.css";
+}
+
+.scrollLine {
+  composes: scrollLine from "../../app/about/about.module.css";
+}

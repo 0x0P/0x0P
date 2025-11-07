@@ -1,0 +1,18 @@
+@import "../../app/about/about.module.css";
+
+.section {
+  composes: section from "../../app/about/about.module.css";
+}
+
+.sectionContent {
+  composes: sectionContent from "../../app/about/about.module.css";
+}
+
+.skillsGrid {
+  composes: skillsGrid from "../../app/about/about.module.css";
+}
+
+.skillCategory {
+  composes: skillCategory from "../../app/about/about.module.css";
+}
+

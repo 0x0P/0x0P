@@ -1,0 +1,37 @@
+@import "../../app/about/about.module.css";
+
+.section {
+  composes: section from "../../app/about/about.module.css";
+}
+
+.sectionContent {
+  composes: sectionContent from "../../app/about/about.module.css";
+}
+
+.approachContent {
+  composes: approachContent from "../../app/about/about.module.css";
+}
+
+.approachText {
+  composes: approachText from "../../app/about/about.module.css";
+}
+
+.largeText {
+  composes: largeText from "../../app/about/about.module.css";
+}
+
+.textGradient {
+  composes: textGradient from "../../app/about/about.module.css";
+}
+
+.bodyText {
+  composes: bodyText from "../../app/about/about.module.css";
+}
+
+.statsGrid {
+  composes: statsGrid from "../../app/about/about.module.css";
+}
+
+.statCard {
+  composes: statCard from "../../app/about/about.module.css";
+}

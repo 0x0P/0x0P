@@ -1,0 +1,18 @@
+@import "../../app/about/about.module.css";
+
+.section {
+  composes: section from "../../app/about/about.module.css";
+}
+
+.sectionContent {
+  composes: sectionContent from "../../app/about/about.module.css";
+}
+
+.philosophyGrid {
+  composes: philosophyGrid from "../../app/about/about.module.css";
+}
+
+.philosophyCard {
+  composes: philosophyCard from "../../app/about/about.module.css";
+}
+

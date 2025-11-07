@@ -1,0 +1,30 @@
+@import "../../app/about/about.module.css";
+
+.section {
+  composes: section from "../../app/about/about.module.css";
+}
+
+.sectionContent {
+  composes: sectionContent from "../../app/about/about.module.css";
+}
+
+.contactContent {
+  composes: contactContent from "../../app/about/about.module.css";
+}
+
+.contactText {
+  composes: contactText from "../../app/about/about.module.css";
+}
+
+.contactLinks {
+  composes: contactLinks from "../../app/about/about.module.css";
+}
+
+.contactLink {
+  composes: contactLink from "../../app/about/about.module.css";
+}
+
+.linkArrow {
+  composes: linkArrow from "../../app/about/about.module.css";
+}
+
