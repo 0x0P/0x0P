@@ -75,7 +75,7 @@ export default function Home() {
         <h1 className={styles.title}>
           Striving for the ideal through
           <br />
-          <span className={styles.marked}>refined sensibility.</span>
+          refined sensibility.
         </h1>
         <div className={styles.backgroundLayers}>
           <div ref={backLayerRef} className={styles.backLayer} />
