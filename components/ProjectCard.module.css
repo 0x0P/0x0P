@@ -11,6 +11,10 @@
   cursor: pointer;
 }
 
+.link {
+  text-decoration: none;
+}
+
 .card:hover {
   background-color: #ff5900;
 }
