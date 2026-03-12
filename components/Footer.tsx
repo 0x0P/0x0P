@@ -31,7 +31,7 @@ export default function Footer() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="https://blog.0x0p.dev" className={styles.link}>
+                  <Link href="https://blog.lxvu.dev" className={styles.link}>
                     Blog
                   </Link>
                 </li>
