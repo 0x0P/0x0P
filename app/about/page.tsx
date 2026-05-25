@@ -60,8 +60,7 @@ export default function About() {
             scrollTrigger: {
               trigger: section,
               start: "top 85%",
-              end: "bottom top",
-              toggleActions: "play reverse play reverse",
+              toggleActions: "play none none none",
             },
           }
         );
@@ -71,9 +70,9 @@ export default function About() {
       const philosophyCards = document.querySelectorAll(
         "[class*='philosophyCard']"
       );
-      philosophyCards.forEach((card, index) => {
+      if (philosophyCards.length > 0) {
         gsap.fromTo(
-          card,
+          philosophyCards,
           {
             opacity: 0,
             y: 30,
@@ -82,25 +81,24 @@ export default function About() {
             opacity: 1,
             y: 0,
             duration: 0.6,
-            delay: index * 0.1,
+            stagger: 0.1,
             ease: "power2.out",
             scrollTrigger: {
-              trigger: card,
+              trigger: philosophyCards[0]?.parentElement,
               start: "top 85%",
-              end: "bottom top",
-              toggleActions: "play reverse play reverse",
+              toggleActions: "play none none none",
             },
           }
         );
-      });
+      }
 
       // Skills animation
       const skillCategories = document.querySelectorAll(
         "[class*='skillCategory']"
       );
-      skillCategories.forEach((skill, index) => {
+      if (skillCategories.length > 0) {
         gsap.fromTo(
-          skill,
+          skillCategories,
           {
             opacity: 0,
             x: -20,
@@ -109,23 +107,22 @@ export default function About() {
             opacity: 1,
             x: 0,
             duration: 0.6,
-            delay: index * 0.1,
+            stagger: 0.1,
             ease: "power2.out",
             scrollTrigger: {
-              trigger: skill,
+              trigger: skillCategories[0]?.parentElement,
               start: "top 85%",
-              end: "bottom top",
-              toggleActions: "play reverse play reverse",
+              toggleActions: "play none none none",
             },
           }
         );
-      });
+      }
 
       // Stats animation
       const stats = document.querySelectorAll("[class*='statCard']");
-      stats.forEach((stat, index) => {
+      if (stats.length > 0) {
         gsap.fromTo(
-          stat,
+          stats,
           {
             opacity: 0,
             scale: 0.95,
@@ -134,23 +131,22 @@ export default function About() {
             opacity: 1,
             scale: 1,
             duration: 0.5,
-            delay: index * 0.1,
+            stagger: 0.1,
             ease: "power2.out",
             scrollTrigger: {
-              trigger: stat,
+              trigger: stats[0]?.parentElement,
               start: "top 85%",
-              end: "bottom top",
-              toggleActions: "play reverse play reverse",
+              toggleActions: "play none none none",
             },
           }
         );
-      });
+      }
 
       // Contact links animation
       const contactLinks = document.querySelectorAll("[class*='contactLink']");
-      contactLinks.forEach((link, index) => {
+      if (contactLinks.length > 0) {
         gsap.fromTo(
-          link,
+          contactLinks,
           {
             opacity: 0,
             y: 20,
@@ -159,17 +155,16 @@ export default function About() {
             opacity: 1,
             y: 0,
             duration: 0.5,
-            delay: index * 0.1,
+            stagger: 0.1,
             ease: "power2.out",
             scrollTrigger: {
-              trigger: link,
+              trigger: contactLinks[0]?.parentElement,
               start: "top 85%",
-              end: "bottom top",
-              toggleActions: "play reverse play reverse",
+              toggleActions: "play none none none",
             },
           }
         );
-      });
+      }
     });
 
     return () => ctx.revert();

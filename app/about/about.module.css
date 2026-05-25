@@ -1,13 +1,9 @@
 .container {
   background-color: #000;
   color: #fff;
-  overflow: visible !important;
-  overflow-x: hidden !important;
-  overflow-y: visible !important;
+  overflow-x: clip;
+  overflow-y: visible;
   position: relative;
-  height: auto !important;
-  max-height: none !important;
-  min-height: 0 !important;
 }
 
 /* Decorative Background Pattern */
@@ -38,6 +34,8 @@
   pointer-events: none;
   z-index: 0;
   overflow: hidden;
+  user-select: none;
+  will-change: auto;
 }
 
 /* Corner Decorations - Subtle & Elegant */

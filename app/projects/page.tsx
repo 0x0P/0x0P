@@ -34,13 +34,6 @@ const projectsData = [
     link: "https://github.com/0x0p/omok",
   },
   {
-    title: "relay",
-    description: "Redis를 활용한 임시 메일 서비스",
-    tags: ["JavaScript", "Redis"],
-    year: "2025",
-    link: "https://github.com/0x0p/relay",
-  },
-  {
     title: "trave",
     description:
       "시계열 데이터 수집 및 처리 시스템. InfluxDB와 Telegraf를 통해 수집한 메트릭을 NestJS로 처리합니다.",
